@@ -16,7 +16,8 @@ public class HelloApplication {
 
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
-        User user = ctx.getBean(User.class);
+//        User user = ctx.getBean(User.class);
+        User user = (User) ctx.getBean("user");
         log.info(user.getUserName());
         SpringApplication.run(HelloApplication.class, args);
     }
