@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import com.example.hello.entity.User;
 
 @Configuration
-@ComponentScan
+@ComponentScan(value = "com.example.hello.*", lazyInit = true)
 public class AppConfig {
     @Bean(name = "user")
     public User initUser() {

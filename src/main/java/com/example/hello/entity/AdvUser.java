@@ -1,4 +1,4 @@
-package com.example.hello.config;
+package com.example.hello.entity;
 
 import lombok.Getter;
 import lombok.Setter;
